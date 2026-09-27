@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aoife — Which First?",
   description: "Learn the order of operations — brackets, times and plus — by building bags before gathering piles.",
+  // Home Screen install — see app/manifest.ts (installed web apps keep localStorage).
+  applicationName: "Which First?",
+  appleWebApp: { capable: true, title: "Which First?", statusBarStyle: "default" },
+  other: { "apple-mobile-web-app-capable": "yes" },
 };
 
 export default function RootLayout({

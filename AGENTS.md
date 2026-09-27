@@ -219,3 +219,13 @@ lib/levels/levels.test.ts — the 500-seed self-test harness
   loop that breaks as soon as the PNG appears. A throwaway `app/preview/page.tsx` that
   renders `figureAt(problem, i)` for every `i` is the fastest way to eyeball all figure
   states at once — build it, screenshot it, delete it.
+
+## Home Screen install (2026-09-27)
+
+Progress is localStorage-only, and Safari wipes a site's storage after 7 days without a
+visit. A web app **added to the Home Screen** is exempt from that purge, so the app ships
+`app/manifest.ts` (→ `/manifest.webmanifest`, display standalone), `app/apple-icon.png`
+(180px, → `<link rel="apple-touch-icon">`), `public/icon-192.png` + `public/icon-512.png`,
+and `appleWebApp` + `apple-mobile-web-app-capable` in `app/layout.tsx` metadata. Icons are a
+pink-400 → purple-500 gradient with a white glyph. Don't remove these. Caveat: the installed
+app has its OWN storage — stars earned in the Safari tab do not carry over to the icon.
