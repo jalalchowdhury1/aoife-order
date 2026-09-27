@@ -1,5 +1,9 @@
 # AGENTS.md — Which First? (aoife-order)
 
+> **RETIRED 2026-09-27.** Aoife no longer uses this app. GitHub repo archived (read-only;
+> `gh repo unarchive` to revive), Vercel project removed, fleet-health row deleted.
+> The code is complete here if it is ever wanted again.
+
 > **Single source of truth for anyone (human or AI) touching this repo.** Read it fully
 > before changing code or "fixing" anything. If something here is wrong, fix *this* file.
 > README.md is Jalal's plain-English doc — leave it alone unless asked.
